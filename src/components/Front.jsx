@@ -1,8 +1,13 @@
 import Section from "./Section";
 import Button from "./Button";
 import { heroBackground, robot } from "../assets";
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { useRef } from "react";
+import LogoLine from "./LogoLine";
 
 const Front = () => {
+  const parallaxRef = useRef(null);
+
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
@@ -11,7 +16,7 @@ const Front = () => {
       customPaddings
       id="front"
     >
-      <div className="container relative">
+      <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb:[6rem]">
           <h1 className="h1 mb-6">
             Code Hard, Compete Smart, Win Big - KodeWreck Awaits!
@@ -49,7 +54,9 @@ const Front = () => {
               alt="hero"
             />
           </div>
+          <BackgroundCircles />
         </div>
+        <LogoLine className="hidden relative z-10 mt-20 lg:block" />
       </div>
     </Section>
   );
