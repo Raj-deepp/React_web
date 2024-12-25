@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Front from "./components/Front";
 import Goals from "./components/Goals";
 import Roadmaps from "./components/Roadmap";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Front />
         <Goals />
         <Roadmaps />
+        <Footer />
       </div>
       <ButtonGradient />
     </>
