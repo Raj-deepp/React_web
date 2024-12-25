@@ -10,6 +10,7 @@ const App = () => {
         <Header />
         <Front />
         <Goals />
+        <Event />
       </div>
       <ButtonGradient />
     </>
