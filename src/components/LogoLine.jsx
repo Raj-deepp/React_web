@@ -1,5 +1,3 @@
-// import { logoLine } from "../constants";
-
 import { constLogos } from "../constants";
 
 const LogoLine = ({ className }) => {

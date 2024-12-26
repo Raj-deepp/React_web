@@ -1,4 +1,4 @@
-import { brainwave } from "../assets";
+import { kodewreck } from "../assets";
 import { navigation } from "../constants";
 import { useLocation } from "react-router-dom";
 import Button from "./Button";
@@ -37,7 +37,7 @@ const Header = () => {
       <div className=" lg:flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <div className="flex items-center">
           <a className=" block w-[12rem] xl:mr-8" href="#hero">
-            <img src={brainwave} width={150} height={50} alt="KodeWreck" />
+            <img src={kodewreck} width={150} height={50} alt="KodeWreck" />
           </a>
           <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNav}>
             <MenuSvg openNavigation={openNav} />

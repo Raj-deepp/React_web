@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Button from "./Button";
 import { heroBackground, robot } from "../assets";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles } from "./design/Hero";
 import { useRef } from "react";
 import LogoLine from "./LogoLine";
 
